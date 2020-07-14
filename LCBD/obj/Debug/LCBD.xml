@@ -1,0 +1,999 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LCBD
+</name>
+</assembly>
+<members>
+<member name="T:LCBD.My.Resources.Resources">
+<summary>
+  Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
+</summary>
+</member>
+<member name="P:LCBD.My.Resources.Resources.ResourceManager">
+<summary>
+  Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
+</summary>
+</member>
+<member name="P:LCBD.My.Resources.Resources.Culture">
+<summary>
+  Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte le
+  ricerche di risorse eseguite utilizzando questa classe di risorse fortemente tipizzata.
+</summary>
+</member>
+<member name="P:LCBD.My.Resources.Resources.logo">
+<summary>
+  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:LCBD.frmMain">
+ <summary>
+ LCBD - Local Carrier Bulk Downloader
+ WebArtigiani
+ </summary>
+ 
+</member>
+<member name="M:LCBD.frmMain.frmMain_Load(System.Object,System.EventArgs)">
+ <summary>
+ Load
+ </summary>
+</member>
+<member name="M:LCBD.frmMain.btnBrowse_Click(System.Object,System.EventArgs)">
+ <summary>
+ Browse for CSV file
+ </summary>
+</member>
+<member name="M:LCBD.frmMain.btnOutputFolder_Click(System.Object,System.EventArgs)">
+ <summary>
+ Browse for output folder
+ </summary>
+</member>
+<member name="M:LCBD.frmMain.btnExecute_Click(System.Object,System.EventArgs)">
+ <summary>
+ Executes
+ </summary>
+</member>
+<member name="M:LCBD.frmMain.btnStop_Click(System.Object,System.EventArgs)">
+ <summary>
+ Stops
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:LCBD.frmMain.lnk1_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+ <summary>
+ Open link
+ </summary>
+</member>
+<member name="M:LCBD.classExtensions.FromJSON2List(System.String)">
+ <summary>
+ Converts a JSON list into a List
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks>requries System.Web.Script.Serialization (add references to System.Web.Extensions)</remarks>
+</member>
+<member name="M:LCBD.classExtensions.Array2List(System.String[])">
+ <summary>
+ Converts an array of strings a List of strings
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks>requries System.Web.Script.Serialization (add references to System.Web.Extensions)</remarks>
+</member>
+<member name="M:LCBD.classExtensions.Def(System.String,System.String)">
+ <summary>
+ Returns the default string if current string is empty
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToBase64(System.String)">
+ <summary>
+ Encodes the string into Base64
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.FromBase64(System.String)">
+ <summary>
+ Encodes the string into Base64
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.Flat(System.String)">
+ <summary>
+ Turn text into "flat" text
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.CountWords(System.String)">
+ <summary>
+ Returns the number of words
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.CountChars(System.String)">
+ <summary>
+ Returns the number of characters excluding tabs and CRLF
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.IsValidMailAddress(System.String@)">
+ <summary>
+ Returns true if the string represents a valid uri
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.IsValidURI(System.String@)">
+ <summary>
+ Returns true if the string represents a valid uri
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.UrlEncode(System.String)">
+ <summary>
+ Encode url
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.UrlDecode(System.String)">
+ <summary>
+ Decode url
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToString2(System.String@)">
+ <summary>
+ Converts current string into a string, also if current strings is nothing
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.FromUnicode(System.String)">
+ <summary>
+ Converts unicode strings into ascii string
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.FromUTF8(System.String)">
+ <summary>
+ Converts unicode strings into ascii string
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToWebName(System.String)">
+ <summary>
+ Converts the current string into a lowerCase string usable on the web
+ </summary>
+ <param name="Name"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.Append(System.String@,System.String)">
+ <summary>
+ Appends a new string to the current string
+ </summary>
+ <param name="value"></param>
+ <param name="StringToAppend">string to append</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.Append(System.String@)">
+ <summary>
+ Clears the string
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.DoubleQuoted(System.String)">
+ <summary>
+ Adds double-quotes from the current string
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.DeDoubleQuoted(System.String)">
+ <summary>
+ Removes double-quotes from the current string
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.RemoveDuplicatedContiguosChar(System.String,System.String)">
+ <summary>
+ Removes all duplicated occurrences of the specified substring from the current string
+ </summary>
+ <param name="value"></param>
+ <param name="FindString">substring to remove</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToCapital(System.String@)">
+ <summary>
+ Capitalizes the current string
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToCapitalPhrases(System.String@,System.String)">
+ <summary>
+ Capitalizes phrases into the current string
+ </summary>
+ <param name="value"></param>
+ <param name="Keywords">keywords to keep unchanged</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToCapitalProper(System.String@)">
+ <summary>
+ Capitalizes the current string by phrases
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.StripHTML(System.String@,System.Boolean)">
+ <summary>
+ Removes all HTML code from the current string
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.DecodeHTMLEntities(System.String@)">
+ <summary>
+ Decode HTML entities
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.fromGenericStringToDate(System.String@)">
+ <summary>
+ Converts generic string into a DateTime
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ExtractSubStringBetween(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Returns a substring extracted from the source string, between String1 and String2
+ </summary>
+ <param name="value"></param>
+ <param name="String1">the substring from which to extract the substring, or NullString to start from the first char of the source string</param>
+ <param name="String2">the substring to which to extract the substring, or NullString to stop at the last char of the source string</param>
+ <param name="BothRequired">true if both substrings are required</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ExtractLinks(System.String@,System.Boolean)">
+ <summary>
+ Extracts links from an HTML text and returns them into a disctionary (a-name, a-link)
+ </summary>
+ <param name="value">input string (html code)</param>
+ <returns>Returns the list of links into a disctionary (a-name, a-link)</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ExtractIFrames(System.String@,System.Boolean)">
+ <summary>
+ Extracts iFrames Src(s) from an HTML text and returns them into a List of string
+ </summary>
+ <param name="value">input string (html code)</param>
+ <returns>Returns the list of iFrame sources into a List</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ExtracImageUrls(System.String@)">
+ <summary>
+ Extracts images url from an HTML text and returns them into list of string
+ </summary>
+ <param name="value">input string (html code)</param>
+ <returns>Returns the listof uri</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToBoolean(System.String@)">
+ <summary>
+ Converts a string into boolean
+ </summary>
+ <param name="value">input string</param>
+ <returns>Returns true/false</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToHex(System.Double)">
+ <summary>
+ Converts a double into hex
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToCurrency(System.String)">
+ <summary>
+ Converts the current string into a currency value, by detecting the system decimal separator char
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToCurrencyStr(System.Double)">
+ <summary>
+ Converts Currency into string using the current system decimal separator
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ConvertCurrency(System.Double,System.String,System.String)">
+ <summary>
+ Converts the current value from/to two different currencies
+ </summary>
+ <param name="Value"></param>
+ <param name="FromCurrency">Original Currency (ex: "EUR")</param>
+ <param name="ToCurrency">Destination Currency (ex: "USD")</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.InchesToCm(System.Double)">
+ <summary>
+ Converts current value from Inches to Centimeters
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.InchesToMm(System.Double)">
+ <summary>
+ Converts current value from Inches to Millimeters
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.CmToInches(System.Double)">
+ <summary>
+ Converts current value from Centimeters to Inches
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.MmToInches(System.Double)">
+ <summary>
+ Converts current value from Millimeters to Inches
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.PoundsToKg(System.Double)">
+ <summary>
+ Converts current value from Pounds (LBS) to Kg
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.KgToPounds(System.Double)">
+ <summary>
+ Converts current value from Kg to Pounds (LBS)
+ </summary>
+ <param name="value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.Round(System.Double,System.Int32)">
+ <summary>
+ Rounds the current value to the specified number of decimal digits
+ </summary>
+ <param name="Value"></param>
+ <param name="Digits">Number of decimal digits. Default value is 2</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.SecondsToTime(System.Int32)">
+ <summary>
+ Converts seconds to Time representation hh:mm:ss
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToHex(System.Int32)">
+ <summary>
+ Converts a Int32 into hex
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToVersionNumber(System.Int32)">
+ <summary>
+ Converts a Int32 into a version number (such as 1.0.1)
+ </summary>
+ <param name="Value"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.classExtensions.ToUnix(System.DateTime)">
+ <summary>
+ Returns a timestamp from date/time
+ </summary>
+ <param name="value"></param>
+ <remarks>Test by https://www.epochconverter.com/</remarks>
+ <returns></returns>
+</member>
+<member name="M:LCBD.classExtensions.FromUnix(System.DateTime@,System.String)">
+ <summary>
+ Converts a timestamp into date/time
+ </summary>
+ <param name="value"></param>
+ <remarks>Test by https://www.epochconverter.com/</remarks>
+ <returns></returns>
+</member>
+<member name="T:LCBD.AppInfo">
+ <summary>
+ AppInfo.vb
+ </summary>
+</member>
+<member name="P:LCBD.AppInfo.AppName">
+ <summary>
+ Returns the AppName
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LCBD.AppInfo.AppShortName">
+ <summary>
+ Returns the ApPShortName
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LCBD.AppInfo.AppVersion">
+ <summary>
+ Returns the AppVersion
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LCBD.AppInfo.AppVersionNum">
+ <summary>
+ Returns the AppVersionNum
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LCBD.AppInfo.Path">
+ <summary>
+ Returns the application path
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LCBD.AppInfo.CommandLineParams">
+ <summary>
+ Returns the current startup CommandLine parameters
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LCBD.Environment">
+ <summary>
+ Environment.vb
+ </summary>
+</member>
+<member name="P:LCBD.Environment.SourcesFolder">
+ <summary>
+ Returns the environment Root folder
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LCBD.Environment.Folder(System.String)">
+ <summary>
+ Returnshe a specific environment folder
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:LCBD.FileSystem">
+ <summary>
+ FileSystem.vb
+ </summary>
+</member>
+<member name="M:LCBD.FileSystem.FileExists(System.String)">
+ <summary>
+ Returns true if the specified file exists
+ </summary>
+ <param name="FileName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.GetTempFileName(System.String)">
+ <summary>
+ Returns a temp-unique filename
+ </summary>
+ <param name="Extension"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.GetFileSize(System.String)">
+ <summary>
+ Returns the FileName file size
+ </summary>
+ <param name="FileName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.CopyFile(System.String,System.String)">
+ <summary>
+ Copies a file from source to destination
+ </summary>
+ <param name="Source"></param>
+ <param name="Destination"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.MoveFile(System.String,System.String)">
+ <summary>
+ Moves a file from source to destination
+ </summary>
+ <param name="Source"></param>
+ <param name="Destination"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.DeleteFile(System.String)">
+ <summary>
+ Tryes to delete a file
+ </summary>
+ <param name="FileName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.FileToBase64(System.String)">
+ <summary>
+ Converts the input file into a Base64 string
+ </summary>
+ <param name="fileName"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.FileSystem.readTextFile(System.String,System.String)">
+ <summary>
+ Read the specified text file and returns its content
+ </summary>
+ <param name="FileName">filename of the file to read</param>
+ <returns>returns the content of the file, or null string if the file doesn't esists or is empty</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.readTextFiles(System.String,System.String)">
+ <summary>
+ Read the specified text file and returns its content
+ </summary>
+ <param name="PathName">Path from wicth to read text files</param>
+ <returns>returns the content of the file, or null string if the file doesn't esists or is empty</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.writeTextFile(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Writes the specified text into the specified file
+ </summary>
+ <param name="FileName">filename of the file to write</param>
+ <param name="Content">Content to write</param>
+ <param name="IncludeNewLine">true to include new line at the end of file</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.appendTextFile(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Appends the specified text into the specified file
+ </summary>
+ <param name="FileName">filename of the file to write</param>
+ <param name="Content">Content to write</param>
+ <param name="IncludeNewLine">true to include new line ad the end of file</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.FolderExists(System.String)">
+ <summary>
+ Returns true if the specified folder exists
+ </summary>
+ <param name="DirectoryName">directory to create</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.CreateFolder(System.String)">
+ <summary>
+ Creates the specified directory
+ </summary>
+ <param name="DirectoryName">directory to create</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.CreateFolderTree(System.String)">
+ <summary>
+ Creates the specified directory tree
+ </summary>
+ <param name="DirectoryName">directory to create</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.DeleteDir(System.String)">
+ <summary>
+ Deletes all files from the specified directory, and the specified folder
+ </summary>
+ <param name="DirectoryName">Directory name</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.DeleteAllFiles(System.String,System.String,System.String,System.String)">
+ <summary>
+ Tryes to delete all files in a diretory
+ </summary>
+ <param name="DirectoryName">Diretory to delete</param>
+ <param name="FileNamePrefix">Filename prefix to delete</param>
+ <param name="Except">File name not to delete</param>
+ <returns>Returns true if deletes all file or the folder is empty</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.CopyFolder(System.String,System.String)">
+ <summary>
+ Copies the source folder into the destination folder
+ </summary>
+ <param name="SourceDirectory">source foler</param>
+ <param name="DestinationDirectory">destination dolfer</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.ListSubFolders(System.String)">
+ <summary>
+ Returns a list of the specified Directory subfolders
+ </summary>
+ <param name="DirectoryName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.ListFiles(System.String,System.String,System.Int32)">
+ <summary>
+ Lists all files into the specified directory
+ </summary>
+ <param name="DirectoryName"></param>
+ <param name="Pattern">search pattern</param>
+ <param name="OrderByDate">1: order by date increasing; -1 order by date decreasing; 0:order by name</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.GetDirectoryFileCount(System.String,System.String)">
+ <summary>
+ Returns the number of files into the specified directory
+ </summary>
+ <param name="DirectoryName"></param>
+ <param name="Pattern">search pattern</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.FileSystem.GetDirectorySize(System.String)">
+ <summary>
+ Returns the total size of the specified directory
+ </summary>
+ <param name="DirectoryName">Directory name</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LCBD.Imaging">
+ <summary>
+ Imaging.vb
+ </summary>
+</member>
+<member name="M:LCBD.Imaging.IsImage(System.String)">
+ <summary>
+ Returns true if the specified file is an image
+ </summary>
+ <param name="FileName"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Imaging.GetImageSize(System.String,System.Int32@,System.Int32@)">
+ <summary>
+ Returns the size of the specified image filename
+ </summary>
+ <param name="FileName"></param>
+ <param name="Width"></param>
+ <param name="Height"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Imaging.ResizeImageFile(System.String,System.String,System.Int32,System.Int32)">
+ <summary>
+ Resizes image from file, and saves it as new file
+ </summary>
+ <param name="SourceFileName"></param>
+ <param name="SaveFileName"></param>
+ <param name="TargetWidth"></param>
+ <param name="TargetHeight"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Imaging.ResizeImage(System.Drawing.Bitmap,System.Int32,System.Int32)">
+ <summary>
+ Resizes an image from Bitmap and returns it as new Bitmap
+ </summary>
+ <param name="bmSource"></param>
+ <param name="TargetWidth"></param>
+ <param name="TargetHeight"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Imaging.Base64ToBitmap(System.String)">
+ <summary>
+ Converts a Base64 string into an image
+ </summary>
+ <param name="base64string"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Imaging.Base64ToImage(System.String)">
+ <summary>
+ Converts a Base64 string into an image
+ </summary>
+ <param name="base64string"></param>
+ <returns></returns>
+</member>
+<member name="T:LCBD.Log">
+ <summary>
+ Log.vb
+ </summary>
+</member>
+<member name="M:LCBD.Log.Log(System.String)">
+ <summary>
+ Writes a line into log
+ </summary>
+ <param name="LogLine"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Log.Err(System.String)">
+ <summary>
+ Write an error line into log
+ </summary>
+ <param name="ErrorDescription"></param>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Log.Read">
+ <summary>
+ Reads the content of the log
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Log.Clear">
+ <summary>
+ Clears the content of the log
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:LCBD.Node">
+ <summary>
+ Node.vb
+ </summary>
+</member>
+<member name="M:LCBD.Node.GetVersion">
+ <summary>
+ Returns true if Node.js is installed
+ </summary>
+ <returns>DO NOT USE IT! WE CANNOT READ THE PROGRAM OUTPUT!!!</returns>
+</member>
+<member name="M:LCBD.Node.HasNode">
+ <summary>
+ Returns true if Node.js is installed
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Node.HasNPM">
+ <summary>
+ Returns true if NPM (Node Package Manager) is installed
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Node.Install(System.String@,System.String@)">
+ <summary>
+ Downloads and install Node.js v.10.16.3 (x86/x64, depending on the current operating system)
+ </summary>
+ <remarks>
+ Downloads https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi
+ or https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi
+ </remarks>
+ <returns></returns>
+</member>
+<member name="M:LCBD.Node.ExecNodeScripts(System.Collections.Generic.Dictionary{System.String,System.String})">
+ <summary>
+ Exec concurrently a list of node.js scripts with their command-lines, and waits until the end of all the processes
+ </summary>
+ <param name="ScriptCommandsAndFileName">Dictionary of command-lines (keys) and script-filenames (values)</param>
+ <returns>true in case of success</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Node.ExecNodeScript(System.String,System.String)">
+ <summary>
+ Exec a single node.js scripts with command-lines
+ </summary>
+ <param name="ScriptFileName">Script Filename</param>
+ <param name="ScriptArguments">arguments to send to the script</param>
+ <returns>true in case of success</returns>
+ <remarks></remarks>
+</member>
+<member name="T:LCBD.Registry">
+ <summary>
+ Registry.vb
+ reads/writes registry into "HKEY_CURRENT_USER\Software\VB and VBA Program Settings"
+ </summary>
+</member>
+<member name="M:LCBD.Registry.ReadSetting(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Reads and returns a setting from the windows registry
+ </summary>
+ <param name="Section">Windows Registry Section</param>
+ <param name="ParamName">Windows Registry Parameter name</param>
+ <param name="DefaultValue">The default value to read</param>
+ <param name="Encode">True if the values has been encoded when written</param>
+ <returns>The read value or the default value, if missing</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Registry.WriteSetting(System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ Writes a setting into the Windows Registry
+ </summary>
+ <param name="Section">Windows Registry Section</param>
+ <param name="ParamName">Windows Registry Parameter name</param>
+ <param name="Value">The value to write</param>
+ <param name="Encode">True to encode the value</param>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Registry.RemoveSetting(System.String,System.String)">
+ <summary>
+ Removes a stored value from the Windows Registry
+ </summary>
+ <param name="Section">Windows Registry Section</param>
+ <param name="ParamName">the Windows Registry parameter name to remove</param>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Registry.DeleteSection(System.String)">
+ <summary>
+ Deletes all values and all sub-keys into a Windows Registry section
+ </summary>
+ <param name="Section">Windows Registry Section</param>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Registry.RegEncode(System.String)">
+ <summary>
+ Encodes a value
+ </summary>
+ <param name="value">value to encode</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Registry.RegDecode(System.String)">
+ <summary>
+ Decodes an encoded value
+ </summary>
+ <param name="value">value to decode</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LCBD.Shell">
+ <summary>
+ Shell.vb
+ </summary>
+</member>
+<member name="M:LCBD.Shell.ShellAndWait(System.String,System.String,System.Boolean,System.Boolean,System.Diagnostics.ProcessWindowStyle,System.Boolean,System.Int32@,System.String@)">
+ <summary>
+ Executes a command
+ </summary>
+ <param name="ProcessPath">application path</param>
+ <param name="Arguments">command line arguments</param>
+ <param name="Wait">true to make code wait</param>
+ <param name="SetWorkingDirectory">Sets/not the application directory as working directory</param>
+ <param name="WindowStyle">WindowStyle: Normal, Maximized, Minimized, Hidden</param>
+ <param name="ExitCode">Returns the process exit code when "wait" is true</param>
+ <param name="GetOutput">True to get the application output</param>
+ <param name="Output">Returns the application output</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Shell.CheckCommand(System.String,System.String)">
+ <summary>
+ Checks if application or command is supported
+ </summary>
+ <param name="ProcessPathOrName">application path or name</param>
+ <param name="Arguments">command line arguments</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LCBD.SystemInfo">
+ <summary>
+ SystemInfo.vb
+ </summary>
+</member>
+<member name="P:LCBD.SystemInfo.Is64Bit">
+ <summary>
+ Returns true if we're in a 64 bit operating System
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:LCBD.SystemInfo.Is32Bit">
+ <summary>
+ Returns true if we're in a 32 bit operating System
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:LCBD.Web">
+ <summary>
+ Web.vb
+ </summary>
+</member>
+<member name="M:LCBD.Web.GetURL(System.String)">
+ <summary>
+ Returns the content of the speficied url
+ </summary>
+ <param name="Url">url (http/https/ftp) to read</param>
+ <returns>the url content</returns>
+ <remarks>for ftp access, url must specify the required username and password</remarks>
+</member>
+<member name="M:LCBD.Web.DownloadFile(System.String,System.String,System.String,System.String)">
+ <summary>
+ Downloads a file from the specified url and saves it in local
+ </summary>
+ <param name="DownloadUrl">Url to download</param>
+ <param name="SaveFileName">filename to save</param>
+ <returns>true in case of success</returns>
+ <remarks></remarks>
+</member>
+<member name="M:LCBD.Web.ClearTemporaryInternetFiles">
+ <summary>
+ Clears Internet Explorer temporary files
+ </summary>
+</member>
+<member name="M:LCBD.Web.ClearCookies">
+ <summary>
+ Clears Internet Explorer cookies
+ </summary>
+</member>
+<member name="M:LCBD.Web.ClearHistory">
+ <summary>
+ Clears Internet Explorer Hostiry
+ </summary>
+</member>
+<member name="M:LCBD.Web.ExtractLinksFromHTML(System.String,System.Collections.Generic.List{System.String}@,System.Boolean)">
+ <summary>
+ ExtractsLinks from an html code and returns thems into a list of string
+ </summary>
+ <param name="HTML">HTML code from wich extract links</param>
+ <param name="Links">returned list of extracted links</param>
+ <returns></returns>
+ <remarks>Returns list of extracted links</remarks>
+</member>
+<member name="M:LCBD.Web.SSLCertificateHandler(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+ <summary>
+ Gestore di eventi del gestore dei certificati
+ </summary>
+ <returns>restituisce sempre true per by-passare eventuali errori di certificato</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
