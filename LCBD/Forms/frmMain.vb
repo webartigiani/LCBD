@@ -252,6 +252,7 @@ Public Class frmMain
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub btnStop_Click(sender As Object, e As EventArgs) Handles btnStop.Click
+        ' LO LEGGI CHE HO CAMBIATO IL CONTENUTO O SEI UN CAGONE????
         If MessageBox.Show("Confermi di volere interrompere il download delle immagini?", "Conferma interruzione", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) = DialogResult.Yes Then btnStop.Tag = "Y"
     End Sub
 
